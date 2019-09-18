@@ -1,0 +1,32 @@
+Dataset 1 link: https://www.kaggle.com/kendallgillies/nflstatistics
+
+This dataset provides basic statistics and career statistics for all NFL players past and present.
+
+The first main group of statistics is the basic statistics provided for each player. This data is stored in the CSV file titled Basic_Stats.csv along with the player’s name and URL identifier. (Screenshot 1)
+
+This file includes birth place, college, current team, experience, height, high school, name , player id, position, and weight. Each player has a unique player id that relates to the player id in the other files. Player id is a primary key in Basic_Stats.csv and a foreign key in the other files.
+
+
+Career_Stats_Defensive.csv (Screenshot 2)
+
+Defensive career statistics with the following statistics: Player Id, Name, Position, Year, Team, Games Played, Total Tackles, Solo Tackles, Assisted Tackles, Sacks, Safties, Passes Defended, Ints, Ints for TDs, Int Yards, Yards Per Int, and Longest Int Return.
+
+
+Career_Stats_Receiving.csv (Screenshot 3)
+
+Receiving career statistics with the following statistics: Player Id, Name, Position, Year, Team, Games Played, Receptions, Receiving Yards, Yards Per Reception, Yards Per Game, Longest Reception, Receiving TDs, Receptions Longer than 20 Yards, Receptions Longer than 40 Yards, First Down Receptions, and Fumbles.
+
+
+Career_Stats_Rushing.csv (Screenshot 4)
+
+Rushing career statistics with the following statistics: Player Id, Name, Position, Year, Team, Games Played, Rushing Attempts, Rushing Attempts Per Game, Rushing Yards, Yards Per Carry, Rushing Yards Per Game, Rushing TDs, Longest Rushing Run, Rushing First Downs, Percentage of Rushing First Downs, Rushing More Than 20 Yards, Rushing More Than 40 Yards, and Fumbles.
+
+
+Game_Logs_Quarterback.csv (Screenshot 5)
+
+Game logs for quarterbacks with the following statistics: Player Id, Name, Position, Year, Season, Week, Game Date, Home or Away, Opponent, Outcome, Score, Games Played, Games Started, Passes Completed, Passes Attempted, Completion Percentage, Passing Yards, Passing Yards Per Attempt, TD Passes, Ints, Sacks, Sacked Yards Lost, Passer Rating, Rushing Attempts, Rushing Yards, Yards Per Carry, Rushing TDs, Fumbles, and Fumbles Lost.
+
+
+Insights
+
+It would be interesting to use this dataset to see which high schools and colleges produce the most NFL players. We could also determine the average height/weight of NFL players. Using the quarterback game logs and a second dataset that displays past weather conditions, we could see how rain affects a team's passing game.
