@@ -1,0 +1,98 @@
+table contains "--" instead of integer/float values for some rows
+
+
+Basic_Stats:
+-type not found error when casting years_played as INT
+
+
+Defensive_Career_Stats:
+-type not found error when casting total_tackles as INT
+-type not found error when casting solo_tackles as INT
+-type not found error when casting assisted_tackles as INT
+-type not found error when casting sacks as FLOAT
+-type not found error when casting safties as INT
+-type not found error when casting passes_defended as INT
+-type not found error when casting int as INT
+-type not found error when casting int_for_tds as INT
+-type not found error when casting int_yards as INT
+-type not found error when casting longest_int_return as INT
+
+
+Passing_Career_Stats:
+-type not found error when casting passes_attempted as INT
+-type not found error when casting passes_completed as INT
+-type not found error when casting completion_percentage as FLOAT
+-type not found error when casting passing_yards as INT
+-type not found error when casting passing_yards_per_attempt as FLOAT
+-type not found error when casting passing_yards_per_game as FLOAT
+-type not found error when casting td_passes as INT
+-type not found error when casting percentage_of_tds_per_attempt as FLOAT
+-type not found error when casting ints as INT
+-type not found error when casting int_rate as FLOAT
+-type not found error when casting longest_pass as INT
+-type not found error when casting passes_longer_than_20_yards as INT
+-type not found error when casting passes_longer_than_40_yards as INT
+-type not found error when casting sacks as INT
+-type not found error when casting sacked_yards_lost as INT
+
+
+Quarterback_Game_Logs:
+-type not found error when casting game_date as DATE (dates not in correct format; missing year)
+-type not found error when casting games_started as INT
+-type not found error when casting passes_completed as INT
+-type not found error when casting passes_attempted as INT
+-type not found error when casting completion_percentage as FLOAT
+-type not found error when casting passing_yards as INT
+-type not found error when casting passing_yards_per_attempt as FLOAT
+-type not found error when casting td_passes as INT
+-type not found error when casting ints as INT
+-type not found error when casting sacks as INT
+-type not found error when casting sacked_yards_lost as INT
+-type not found error when casting rushing_attempts as INT
+-type not found error when casting rushing_yards as INT
+-type not found error when casting yards_per_carry as FLOAT
+-type not found error when casting rushing_tds as INT
+-type not found error when casting fumbles as INT
+-type not found error when casting fumbles_lost as INT
+
+
+Receiving_Career_Stats:
+-type not found error when casting receptions as INT
+-type not found error when casting receiving_yards as INT
+-type not found error when casting yards_per_reception as FLOAT
+-type not found error when casting longest_reception as INT
+-type not found error when casting receiving_tds as INT
+-type not found error when casting receptions_longer_than_20_yards as INT
+-type not found error when casting receptions_longer_than_40_yards as INT
+-type not found error when casting first_down_receptions as INT
+-type not found error when casting fumbles as INT
+
+
+Runningback_Game_Logs:
+-type not found error when casting game_date as DATE
+-type not found error when casting games_started as INT
+-type not found error when casting rushing_attempts as INT
+-type not found error when casting yards_per_carry as FLOAT
+-type not found error when casting longest_run as INT
+-type not found error when casting rushing_tds as INT
+-type not found error when casting receptions as INT
+-type not found error when casting receiving_yards as INT
+-type not found error when casting yards_per_reception as FLOAT
+-type not found error when casting longest_reception as INT
+-type not found error when casting receiving_tds as INT
+-type not found error when casting fumbles as INT
+-type not found error when casting fumbles_lost as INT
+
+
+Rushing_Career_Stats:
+-type not found error when casting rushing_attempts as INT
+-type not found error when casting rushing_yards as INT
+-type not found error when casting yards_per_carry as FLOAT
+-type not found error when casting rushing_yards_per_game as FLOAT
+-type not found error when casting rushing_tds as INT
+-type not found error when casting longest_run as INT
+-type not found error when casting rushing_first_downs as INT
+-type not found error when casting percentage_of_rushing_first_downs as FLOAT
+-type not found error when casting rushing_more_than_20_yards as INT
+-type not found error when casting rushing_more_than_40_yards as INT
+-type not found error when casting fumbles as INT
