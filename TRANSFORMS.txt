@@ -96,3 +96,6 @@ Rushing_Career_Stats:
 -type not found error when casting rushing_more_than_20_yards as INT
 -type not found error when casting rushing_more_than_40_yards as INT
 -type not found error when casting fumbles as INT
+
+* Remove duplicates in Season_Stats Table using Beam
+* recast data types in Beam
