@@ -1,4 +1,4 @@
-table contains "--" instead of integer/float values for some rows
+table contains "--" instead of null/integer/float values for some rows
 
 
 Basic_Stats:
@@ -69,20 +69,8 @@ Receiving_Career_Stats:
 
 
 Runningback_Game_Logs:
--type not found error when casting game_date as DATE
--type not found error when casting games_started as INT
--type not found error when casting rushing_attempts as INT
--type not found error when casting yards_per_carry as FLOAT
--type not found error when casting longest_run as INT
--type not found error when casting rushing_tds as INT
--type not found error when casting receptions as INT
--type not found error when casting receiving_yards as INT
--type not found error when casting yards_per_reception as FLOAT
--type not found error when casting longest_reception as INT
--type not found error when casting receiving_tds as INT
--type not found error when casting fumbles as INT
--type not found error when casting fumbles_lost as INT
-
+- game_date type must be changed from STRING to DATE
+(TypeError: Cannot convert datetime.date(2012, 12, 23) to a JSON value.)
 
 Rushing_Career_Stats:
 -type not found error when casting rushing_attempts as INT
