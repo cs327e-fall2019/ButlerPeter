@@ -30,3 +30,27 @@ Game logs for quarterbacks with the following statistics: Player Id, Name, Posit
 Insights
 
 It would be interesting to use this dataset to see which high schools and colleges produce the most NFL players. We could also determine the average height/weight of NFL players. Using the quarterback game logs and a second dataset that displays past weather conditions, we could see how rain affects a team's passing game.
+
+
+
+
+Dataset 2 link: https://www.kaggle.com/tobycrabtree/nfl-scores-and-betting-data
+
+This dataset provides stadium descriptions and weather data for NFL games from 1966 onward.
+
+
+nfl_stadiums.csv (Screenshot 6)
+
+provides stadium info such as stadium name, location, type, year opened/closed, address, weather code, average weather, capacity, surface, lattitude, longitude, and elevation
+
+
+nfl_teams.csv (Screenshot 7)
+
+provides team name, id, conference, division for all NFL teams
+
+
+spreadspoke_scores.csv (Screenshot 8)
+
+provides game date, season, game week, score, home/away teams, stadium, over under, temperature, wind, humidity, and additonal weather detail if available for all NFL games since 1966
+
+Insights: We plan to join dataset1 and dataset2 on game date to see how different weather/stadium conditions affect NFL stats.
