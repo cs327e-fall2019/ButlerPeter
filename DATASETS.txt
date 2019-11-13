@@ -52,3 +52,5 @@ provides team name, id, conference, division for all NFL teams
 spreadspoke_scores.csv (Screenshot 8)
 
 provides game date, season, game week, score, home/away teams, stadium, over under, temperature, wind, humidity, and additonal weather detail if available for all NFL games since 1966
+
+Insights: We plan to join dataset1 and dataset2 on game date to see how different weather/stadium conditions affect NFL stats.
