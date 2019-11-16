@@ -1,7 +1,8 @@
 -- Query 1 --
 -- The expected results of this query would be the player ids of all players from both teams from every game played in the NFL. Furthermore this query will yield the home and away team, the score of the home and away team, and the year the game was played.
---This query runs by using a select statement as well as a join operation in the from clause as well as utilizing filtration in the where clause to ensure the years from both tables are the same, ensuring the games are matched properly.
--- This query runs properly and does not require reformatting.
+-- This query runs by using a select statement as well as a join operation in the from clause as well as utilizing filtration in the where clause to ensure the years from both tables are the same, ensuring the games are matched properly.
+This query requires that the date field in the nfl_weather_modeled.spreadspoke_scores be standardized into YYYY-MM-DD format.
+
 select a.player_id, b.stadium, b.team_home, b.team_away, b.score_home, b.score_away, b.schedule_season
 from nfl_stats_modeled.Quarterback_Game_Logs_Beam_DF a join nfl_weather_modeled.spreadspoke_scores b on a.game_date = b.schedule_date
 where a.year = b.schedule_season
@@ -10,7 +11,7 @@ where a.year = b.schedule_season
 -- This query's expected results would be to get the average passing completion percentage of each player when the wind was greater than 20 MPH. 
 -- This query utilizes a select statement and a join statement in order to filter player completion percentages when the wind was greater than 20 MPH. These percentages are then further filtered using an agregate function to fund the rounded average of completion percentages. 
 -- The query sorts the data using a group by clause according to player_id. 
--- This query runs properly and does not require reformatting.
+-- This query requires that the date field in the nfl_weather_modeled.spreadspoke_scores be standardized into YYYY-MM-DD format.--
 
 select a.player_id, round(avg(a.completion_percentage), 2)
 from nfl_stats_modeled.Quarterback_Game_Logs_Beam_DF a join nfl_weather_modeled.spreadspoke_scores b on a.game_date = b.schedule_date 
@@ -22,7 +23,7 @@ group by a.player_id
 -- This query's expected results would be to get the average rushing yards of each player when the temperature was less than 20 degrees. 
 -- This query utilizes a select statement and a join statement in order to filter player rushing yards when the temperature was less than 20 degrees.  These percentages are then further filtered using an agregate function to fund the rounded average of rushing yards. 
 -- The query sorts the data using a group by clause according to player_id. 
--- This query runs properly and does not require reformatting.
+-- This query requires that the date field in the nfl_weather_modeled.spreadspoke_scores be standardized into YYYY-MM-DD format. --
 
 select a.player_id, round(avg(a.rushing_yards), 2)
 from nfl_stats_modeled.Quarterback_Game_Logs_Beam_DF a join nfl_weather_modeled.spreadspoke_scores b on a.game_date = b.schedule_date 
