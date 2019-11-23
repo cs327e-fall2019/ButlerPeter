@@ -1,0 +1,18 @@
+-- Query 1 --
+-- This query will serve as a proof of concept that will allow us to analyze the results of joining our spreadspoke_scores table with our Quarterback_Game_Logs_Beam_DF table--
+-- The expected results of this query would be the player ids of all players from both teams from every game played in the NFL. Furthermore this query will yield the home and away team, the score of the home and away team, and the year the game was played.
+-- A sanity check was added in the where clause to make sure that the year from Quarterback_Game_Logs_Beam_DF  is the same as the year in spreadspoke_scores.-- 
+-- In order for this query to run properly we must reformat the date within the spreadspoke_scores table.
+select a.player_id, b.stadium, b.team_home, b.team_away, b.score_home, b.score_away, b.schedule_season
+from nfl_stats_modeled.Quarterback_Game_Logs_Beam_DF a join nfl_weather_modeled.spreadspoke_scores b on a.game_date = b.schedule_date
+where a.year = b.schedule_season
+
+-- Query 2 --
+--This query's expected results would be to
+select a.player_id, round(avg(a.completion_percentage), 2)
+from nfl_stats_modeled.Quarterback_Game_Logs_Beam_DF a join nfl_weather_modeled.spreadspoke_scores b on a.game_date = b.schedule_date 
+where a.year = b.schedule_season
+and  b.weather_wind_mph > 20.0
+group by a.player_id
+
+--Query 3--
